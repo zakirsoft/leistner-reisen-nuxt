@@ -1,0 +1,50 @@
+.category {
+    height: 320px;
+    position: relative;
+    margin-bottom: 30px;
+    img {
+        object-fit: cover;
+        height: 320px;
+        width: 100%;
+    }
+    h3.name {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 30px 0;
+        width: 100%;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 700;
+        color: white;
+        text-align: center;
+        z-index: 1;
+        &::after{
+            position: absolute;
+            content: '';
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(0, 0, 0, 0.4));
+            z-index: -1;
+        }
+    }
+    @include mq('tablet-wide', max){
+        height: 230px;
+        img {
+            height: 230px;
+        }
+    }
+    @include mq('tablet', max){
+        width: 100%;
+        h3.name {
+            padding-top: 12px;
+        }
+    }
+    @include mq('mobile', max){
+        h3.name {
+            font-size: 20px;
+        }
+    }
+}

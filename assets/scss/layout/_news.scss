@@ -1,0 +1,93 @@
+// News Starts Here
+.news-area{
+    font-family: $secondaryFont;
+    padding: 60px 0px;
+    @include mq('tablet-lg', max){
+        padding: 30px 0px;
+        padding-bottom: 0 !important;
+    }
+    &-content{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
+        @include mq('tablet-lg', max){
+            flex-direction: column;
+        }
+        @include mq('phone', max) {
+            flex-direction: column;
+        }
+        &-start{
+            display: flex;
+            @include mq('phone', max) {
+                flex-direction: column;
+            }
+        }
+        .news-thumb{
+            margin-right: 25px;
+            width: 210px;
+            height: 290px;
+            @include mq('tablet-lg', max){
+                width: 100%;
+                height: auto;
+                margin-bottom: 30px;
+            }
+            @include mq('phone', max) {
+                margin-right: 0px;
+                width: 100%;
+                height: auto;
+                margin-bottom: 30px;
+            }
+            img{
+                max-width: 100%;
+                object-fit: cover;
+            }
+        }
+        .news-item{
+            @include mq('tablet-lg', max){
+                margin-bottom: 30px;
+            }
+            h6{
+                color: $pink;
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 0;
+            }
+            p{
+                margin: 20px 0px;
+                max-width: 335px;
+                font-size: 14px;
+                color: $lightBlack;
+                @include mq('tablet-lg', max){
+                    margin: 10px 0px;
+                    max-width: 100%;
+                }
+                @include mq('phone', max) {
+                    margin: 10px 0px;
+                    max-width: 100%;
+                }
+            }
+            a{
+                text-decoration: none;
+                color: $lightBlack;
+                font-weight: 700;
+                font-size: 16px;
+                transition: 0.3s all linear;
+                &:hover{
+                    color: $pink;
+                }
+            }
+            &-md{
+                p{
+                    max-width: 500px !important;
+                    @include mq('tablet-lg', max){
+                        max-width: 100%;
+                    }
+                    @include mq('phone', max) {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+// News Ends Here

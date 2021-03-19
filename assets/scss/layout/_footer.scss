@@ -1,0 +1,170 @@
+// Footer Starts Here
+footer{
+    font-family: $secondaryFont;
+    background-color: white;
+    padding: 60px 0px;
+    @include mq('tablet-lg', max) {
+        padding: 30px 0px;
+    }
+    .main-footer{
+        border-top: 1px solid $lightBlack;
+        border-bottom: 2px solid $regular;
+        padding: 30px 0px;
+        &-logo{
+            width: 285px;
+            @include mq('tablet-lg', max) {
+               width: 100%;
+               margin-top: 20px;
+               order: 5;
+            }
+            a{
+                display: block;
+                img{
+                    max-width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        &-wizard{
+            @include mq('tablet-lg', max) {
+                margin-bottom: 20px;
+                margin-right: 20px;
+             }
+            .without-heading{
+                margin-top: 34px;
+                @include mq('tablet-lg', max) {
+                    display: none;
+                }
+            }
+            .wizard-heading{
+                @include mq('tablet-lg', max) {
+                    margin-bottom: 5px;
+                }
+                margin-bottom: 15px;
+                display: block;
+                font-size: 16px;
+                color: $success;
+                font-weight: 700;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+            }
+            ul{
+                margin-bottom: 0;
+                padding-left: 0;
+                li{
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        font-size: 14px;
+                        color: $lightBlack;
+                        transition: 0.3s all linear;
+                        &:hover{
+                            color: $success;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sub-footer{
+        @include mq('tablet-lg', max) {
+            margin-top: 30px;
+        }
+        margin-top: 45px;
+        &-social{
+            @include mq('tablet-lg', max) {
+                margin-top: 25px;
+                order: 2;
+            }
+            h6{
+                font-size: 18px;
+                line-height: 26px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                color: $lightBlack;
+            }
+            .social-media{
+                @include mq('tablet-lg', max) {
+                    margin-top: 10px;
+                }
+                margin-top: 25px;
+                display: flex;
+                a{
+                    @include mq('tablet-lg', max) {
+                        height: 30px;
+                        width: 30px;
+                    }
+                    height: 60px;
+                    width: 60px;
+                    display: inline-block;
+                    margin-right: 40px;
+                    @include mq('tablet-lg', max) {
+                        margin-right: 15px;
+                    }
+                    img{
+                        max-width: 100%;
+                        object-fit: cover;
+                        margin-right: 35px;
+                    }
+                }
+            }
+        }
+        &-partner{
+            display: flex;
+            align-items: center;
+            @include mq('tablet-lg', max) {
+                order: 1;
+            }
+            h6{
+                font-size: 18px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                color: $lightBlack;
+                margin-bottom: 35px;
+                @include mq('tablet-lg', max) {
+                    margin-bottom: 15px;
+                }
+            }
+           
+        }
+        .partner{
+            @include mq('tablet-lg', max) {
+                width: 100% !important;
+            }
+            @include mq('tablet', max) {
+                width: 50% !important;
+            }
+        }
+        .partner-images{
+            @include mq('tablet-lg', max) {
+                width: 50%;
+            }
+            a{
+                display: inline-block;
+                .partner-01{
+                    width: 168px;
+                    height: 88px;
+                    @include mq('tablet-lg', max) {
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+                .partner-02{
+                    margin-left: 70px;
+                    width: 164px;
+                    height: 154px;
+                    @include mq('tablet-lg', max) {
+                        width: 50%;
+                        height: auto;
+                        justify-content: flex-start;
+                    }
+                }
+                img{
+                    object-fit: cover;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+// Footer Ends Here

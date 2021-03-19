@@ -1,0 +1,101 @@
+// Selection Starts Here
+::selection{
+    background-color: $pink;
+    color: white;
+}
+// Selection Ends Here
+
+// Newsletter Starts Here
+.newsletter-area{
+    font-family: $secondaryFont;
+    background-color: $success;
+    padding: 30px 0px;
+    h5{
+        color: white;
+        font-size: 26px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 0;
+        @include mq('tablet-lg', max) {
+            font-size: 24px;
+        }
+        @include mq('mobile', max){
+            font-size: 20px;
+        }
+    }
+    p{
+        color: white;
+        font-weight: 400;
+        font-size: 16px;
+        word-spacing: 2px;
+        margin: 20px 0px;
+        @include mq('tablet-lg', max) {
+            font-size: 14px;
+            line-height: 22px;
+            margin-top: 15px !important;
+        }
+    }
+    form{
+        display: flex;
+        align-items: center;
+        @include mq('tablet-lg', max) {
+            flex-direction: column;
+            align-items: flex-start !important;
+        }
+        .email-input{
+            @include mq('tablet-lg', max) {
+                margin-bottom: 20px;
+                margin-right: 0;
+                flex: 0;
+                width: 100%;
+            }
+            margin-right: 30px;
+            flex: 2 1;
+            input{
+                width: 100%;
+                height: 40px;
+                padding-left: 15px;
+                border: 1px solid transparent;
+                border-radius: 0px;
+                font-size: 16px;
+                color: $lightBlack;
+            }
+        }
+        .default-input{
+            @include mq('tablet-lg', max) {
+                margin-bottom: 20px;
+                flex: 0;
+                width: 100%;
+            }
+            flex: 1 1;
+            margin-right: 30px;
+            input {
+                border-radius: 0px;
+                height: 40px;
+                padding-left: 15px;
+                border: 1px solid transparent;
+                color: $lightBlack;
+                width: 100%;
+            }
+        }
+        .default-btn{
+            padding: 0px 40px;
+            height: 40px;
+            text-transform: uppercase;
+            background-color: $pink;
+            color: white;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            border: 2px solid $pink;
+            transition: 0.3s all linear;
+            flex-basis: 170px;
+            &:hover{
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+// Newsletter Ends Here

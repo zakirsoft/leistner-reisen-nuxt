@@ -1,0 +1,38 @@
+section {
+    .heading {
+        border-top: 2px solid #777;
+        border-bottom: 2px solid #777;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 45px;
+        h2 {
+            font-size: 32px;
+            color: #444;
+        }
+    }
+}
+
+section {
+    .heading {
+        border-top: 2px solid #777;
+        border-bottom: 2px solid #777;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 45px;
+        h2 {
+            font-size: 32px;
+            color: #444;
+        }
+        @include mq('mobile', max){
+            height: 40px;
+            h2 {
+                font-size: 22px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

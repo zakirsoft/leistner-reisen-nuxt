@@ -14,7 +14,7 @@
     "@nuxtjs/axios": "^5.12.5",
     "@nuxtjs/pwa": "^3.3.5",
     "bootstrap": "^5.0.0-beta2",
-    "core-js": "^3.8.3",
+    "core-js": "^3.26.1",
     "fibers": "^5.0.0",
     "nuxt": "^2.14.12",
     "sass-loader": "10"

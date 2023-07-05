@@ -26,6 +26,6 @@
     "eslint": "^7.18.0",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-vue": "^9.15.1",
-    "sass": "^1.54.4"
+    "sass": "^1.63.6"
   }
 }
